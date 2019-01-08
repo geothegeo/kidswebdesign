@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+</html>
+<head>
+	<title>CSS Selectors</title>
+	<link rel="stylesheet" type="text/css" href="../../styles/dailyTasks.css">
+</head>
+<body>
+	<h3>2) Selectors</h3>
+<!-------------------------------------------------------------------------------------------------->		
+	<div class="examples">
+		<div class="exTitle">
+			<p id="css0200">Selectors</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="28" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Selectors</title>
+ <style type="text/css">
+  html,body { height:89%; }
+  p:nth-child(2){ text-decoration:underline; }
+  p:nth-of-type(2){ font-weight:bold !important; }
+ </style>
+</head>
+<body style="width:350px; margin:0px;">
+ <div style="background:orange; height:50%;">
+ <div><p>Hello World!</p>
+  <div>Hello World!</div>
+  <p>Hello World!</p></div>
+ <div><p>Hello World!</p>
+  <p>Hello World!</p>
+  <p>Hello World!</p></div>
+</div>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="css0200.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>Selectors</b> element = HTML element</p>
+			<p><b>&ensp;Universal:</b> (*), selects every element</p>
+			<p><b>&ensp;Type:</b> (element) </p> 
+			<p><b>&ensp;ID:</b> (#(element ID))</p>
+			<p><b>&ensp;Class:</b> (.(element class))</p>
+			<p><b>Group Selectors</b> </p>
+			<p><b>&ensp;General:</b> seperate with commas</p>
+			<p><b>&ensp;Combinators</b> </p>
+			<p><b>&ensp;&ensp;Descedent:</b> descendant element</p>
+			<p><b>&ensp;&ensp;Child:</b> (>), strict descendant element</p>
+			<p><b>&ensp;&ensp;Sibling</b> </p>
+			<p><b>&ensp;&ensp;&ensp;Adjacent:</b> (+), the element and the follwing one</p>
+			<p><b>&ensp;&ensp;&ensp;General:</b> (~), the element and all subsequent ones</p>
+			<p><b>&ensp;Attribute</b> </p>
+			<p><b>&ensp;&ensp;One Attribute, regardless of value:</b> (element[attr])</p>
+			<p><b>&ensp;&ensp;One Attribute, in regards to value:</b> (element[attr="value"])</p>
+			<p><b>&ensp;&ensp;Multiple Attributes:</b> (HTML [attr="value"][attr="value"]...)</p>
+			<p><b>&ensp;Pseudo-Class</b> </p>
+			<p><b>&ensp;&ensp;Dynamic:</b> (element:pseudo class)</p>
+			<p><b>&ensp;&ensp;Structural</b> </p>
+			<p><b>&ensp;&ensp;&ensp;Child Elements:</b> (element:nth-child(#))</p>
+			<p><b>&ensp;&ensp;&ensp;Particular Child:</b> (element:nth-of-type(#)), (element:nth-child(#)),
+				(element:first-of-type()), (element:last-of-type()), (element:only-of-type())</p>
+			<p><b>&ensp;&ensp;Target:</b> (:target)</p>
+			<p><b>&ensp;&ensp;UI Elements States:</b> (:enabled), (:disabled), (:checked)</p>
+			<p><b>&ensp;&ensp;Language:</b> (:lang(__))</p>
+			<p><b>&ensp;&ensp;Negation:</b> (:not(argument))</p>
+			<p><b>&ensp;Pseudo-Elements</b> </p>
+			<p><b>&ensp;&ensp;First Line:</b> (element:first-line)</p>
+			<p><b>&ensp;&ensp;First Letter:</b> (element:first-letter)</p>
+			<p><b>&ensp;&ensp;Content Before:</b> (element:before)</p>
+			<p><b>&ensp;&ensp;Content After:</b> (element:after)</p>
+			<p><b>!important:</b> used after any property value, style will be absolutely applied</p>
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<p>Back to <a href="../cssIndex.html">HTML Table of Contents</a></p>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Generic Input Types</title>
+</head>
+<body><form action="process.asp">
+	Name: <input type="text" name="name" autofocus
+		placeholder="Enter your name here" required
+		autosave="123" pattern="{A-Za-z}*" x-webkit-speech/>
+	<br/><br/>	
+	Age: <input type="number" name="age" value="5" 
+		min="0" max="100" step="1">
+	<br/><br/>
+	Dates: <input type="date" name="dt" value="2019-01-02";/>
+	<br/><br/>	
+	Time: <input type="time" name="tm" value="17:00:00";/>
+	<br/><br/>	
+	Department:
+	<input list="departments" name="department" spellcheck="true"/>
+	<datalist id="departments">
+		<option value="Finance"></option>
+		<option value="Management"></option>
+		<option value="Marketing"></option>
+		<option value="Public Relations"></option>
+		<option value="Research"></option>
+	</datalist>
+	<br/><br/>	
+	Personal Website: <input type="url" name="website" value="http://"/>
+	<br/><br/>
+	Email: <input type="email" name="em" maxlength="30"/>
+	<br/><br/>	
+	Telephone: <input type="tel" name="telephone" value="">
+	<br/><br/>
+	Sex: <input type="radio" name="sex" id="f" />
+	<label for="f">female</label>
+	<input type="radio" name="sex" id="m" />
+	<label for="m">male</label>
+	<br/><br/>
+	Color: <input type="color" name="color"/>
+	<br/><br/>
+	Rating: <input type="range" min="0" max="100" step="1" value="90"/>
+	<br/><br/>
+	<input type="checkbox" id="confirm" name="conditions"/>
+	<label for="confirm">
+		I have read the conditions.
+	</label>
+	<br/><br/>
+	Search: <input type="search" name="q" value="" autocomplete="off"/>
+	<input type="submit"/>
+	</form>
+</body>
+</html>

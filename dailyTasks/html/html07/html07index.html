@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+</html>
+<head>
+	<title>HTML Structural Elements</title>
+	<link rel="stylesheet" type="text/css" href="../../styles/dailyTasks.css">
+</head>
+<body>
+	<h3>7) Microformats</h3>			
+<!-------------------------------------------------------------------------------------------------->
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0701">7.1) hCalendar</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="23" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>hCalendar</title>
+</head>
+<body>
+ <div class="vcalendar">
+  <p class="vevent">
+   Tentative event:
+   <span class="summary">Gold Competition</span>
+   <span class="location">Kuala Lumpur</span>,
+   Friday 6th Feb,
+   <abbr class="dtstart" title="20080206F0900">9am</abbr> - 
+   <abbr class="dtend" title="20080206F1100">11am</abbr>
+  </p>
+ </div>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="html0701.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p>This describes events</p>	
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0702">7.2) hCard</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="36" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hCard</title>
+</head>
+<body>
+ <div class="vcard"><span class="fn">Roxanne Chai</span>
+  <span class="n">
+  <span class="honorific-prefix">Dr.</span>
+  <span class="given-name">Roxanne</span>
+  <abbr class="additional-name">K.</abbr>
+  <span class="family-name">Chai</span>
+  <span class="honorific-name">Ph.D.</span>
+  <span class="nickname">Rosy</span>
+  <div class="org">Rosy Science</div>
+   <a class="email" href="mailto:rosy@example.com">e</a>
+   <div class="tel">+1.818.555.1212</div>
+   <div class="adr">
+   <div class="street-address">123 Main st.</div>
+   <span class="locality">Los Angeles</span>,
+   <abbr class="region" title="California">CA</abbr>,
+   <span class="postal-code">91316</span>
+   <div class="country-name">U.S.A</div></div>
+  <time class="bday">1953-08-31</time>birthday
+  <div class="category">physicist</div>
+  <div class="note">The woman in space.</div>
+ </div>		
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="html0702.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p>This describes contact information</p>	
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0703">7.3) rel-license</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="20" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>rel-license</title>
+</head>
+<body>
+ <a href="http://creativecommons.org/licenses/by/2.0/"
+  rel="license">cc by 2.0</a>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="html0703.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p>This describes copyright license</p>	
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0704">7.4) rel-nofollow</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="20" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>rel-nofollow</title>
+</head>
+<body>
+ <a href="http://example.com/tag/tech"
+  rel="nofollow">lorry</a>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="html0704.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p>This prevents seraching by engines. The hyperlink should not influence 
+				the ranking of the link's target in the search engine's index. </p>		
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0705">7.5) rel-tag</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="20" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>rel-tag</title>
+</head>
+<body>
+ <a href="http://technorati.com/tag/tech" rel="tag">ocean</a>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="html0705.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p>This designates a tag for the current section. A page indicates that 
+				the destination of that hyperlink is an author-designated "tag" (or keyword/subject)
+				for the current page.</p>	
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0706">7.6) VoteLinks</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="20" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Votelinks</title>
+</head>
+<body>
+ <a rev="vote-for" href="http:example.com/housevote.html"
+  title="Build a house!">Agree!</a>
+ <a rev="vote-against" href="http:example.com/housevote.html"
+  title="Don't build a house!">Against!</a>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="html0706.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p>This describes a voting system</p>		
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0707">7.7) XFN</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="22" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>XFN</title>
+</head>
+<body>
+ <a href="http://june-blog.example.org/"
+  rel="sweetheart date met">June</a>
+ <a href="http://steven-blog.example.org/"
+  rel="friend met">Steven</a>
+ <a href="http://james-blog.example.org/"
+  rel="met">James Wong</a>
+ <a href="http://catherine.example.org/"
+  rel="met acquaintance">Catherine</a>
+ <a href="http://mary.example.org/"
+  rel="co-worker friend met">Mary</a>
+ <a href="http://nicholas.example.org/">Nicholas</a>		
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="html0707.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p>This describes XHTML Friends Network</p>		
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0708">7.8) XMDP</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="20" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>XDMP</title>
+ <link rel="profile" href="http://microformats.org/profile/hcard"/>
+ <link rel="profile" href="http://gmpg.org/xfn/11" />
+</head>
+<body>
+ <dl class="profile">
+  <dt id="title">Work Title</dt>
+  <dd>Work Name.</dd>
+ </dl>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="html0708.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p>This describes XHTML Meta Data Profiles</p>	
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0709">7.9) XOXO</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="28" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>XOXO</title>
+</head>
+<body>
+ <ol class="xoxo">
+  <li>Subject 1
+   <ol>
+    <li>objective A</li>
+    <li>objective B</li>
+   </ol>
+  </li>
+  <li>Subject 2
+   <ol compact>
+    <li>objective C</li>
+    <li>objective D</li>
+   </ol>
+  </li>
+  <li>Subject 3
+   <ol>
+    <li>objective E</li>
+   </ol>
+  </li>
+ </ol>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="html0709.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p>This defines lists and outlines</p>		
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0710">7.10) Others</p>
+		</div>
+		<div style="border: 1px turquoise solid; margin-top: 20px; position: relative;	width: 65%;">
+			<p class="exLbl" style="margin: 0;">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="20" cols="80">
+
+			</textarea>
+		</div>				
+
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>hAtom:</b> for making up Atom feeds from within standard HTML</p>	
+			<p><b>hMedia:</b> for audio/vido content</p>	
+			<p><b>hAudio:</b> for audtio content</p>	
+			<p><b>hNews:</b> for news content</p>	
+			<p><b>hProduct:</b> for products</p>	
+			<p><b>hRecipe:</b> for recipes and foodstuffs</p>	
+			<p><b>hResume:</b> for resumes</p>		
+			<p><b>rel-directory:</b> for distributed directory creation and inclusion</p>	
+			<p><b>rel-enclosure</b> for multimedia attachments to web pages</p>	
+			<p><b>xFolk</b> for tagged links</p>	
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<p>Back to <a href="../htmlindex.html">HTML Table of Contents</a></p>
+</body>
+</html>

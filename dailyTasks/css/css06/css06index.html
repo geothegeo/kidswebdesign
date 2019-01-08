@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+</html>
+<head>
+	<title>CSS Box Model Properties</title>
+	<link rel="stylesheet" type="text/css" href="../../styles/dailyTasks.css">
+</head>
+<body>
+	<h3>6) Box Model Properties</h3>
+<!-------------------------------------------------------------------------------------------------->		
+	<div class="examples">
+		<div class="exTitle">
+			<p id="css0601">Sizing</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="36" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Sizing</title>
+ <style>
+  img, div, a {
+   display: inline-block;
+  }
+  img {
+   width: calc(50% - 50px);
+   height: auto;
+  }
+  #triangle {
+   width: 0;
+   height: 0;
+   border-left: 50px solid transparent;
+   border-right: 50px solid transparent;
+   border-bottom: 100px solid red;
+  }
+  #circle {
+   width: 100px;
+   height: 100px;
+   border-radius: 50px;
+   border: 2px solid;
+   background: url('../../media/logo.png');
+  }
+ </style>
+</head>
+<body>
+ <img src="../../media/lLamp.jpg"/>
+ <div id="triangle"></div>
+ <a href="http://yahoo.com"><div id="circle"></div></a>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="css0601.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>[min-|max-]{height|width}:</b> </p>
+			<p><b>box-sizing:</b> </p>
+			<p><b>resize:</b> </p>
+			<p><b>{margin|padding}[-top|-rightt|-bottom|-left}:</b> </p>
+			<p><b>outline[-color|-style|-width]:</b> </p>
+			<p><b>border[-top|-right|-bottom|-left][-color|-style|-width]:</b> </p>
+			<p><b>-color:</b> </p>
+			<p><b>-style:</b> </p>
+			<p><b>-width:</b> </p>
+			<p><b>outline-offset:</b> </p>
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<div class="examples">
+		<div class="exTitle">
+			<p id="css0602">Border Image</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="32" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Border Image</title>
+ <style>
+  div {
+   border-width: 15px;
+   width: 160px;
+   padding: 10px 20px;
+  }
+  #round {
+   border: 10px solid transparent;
+   padding: 10px;
+   border-image: url(../../media/border.png) 30 round;
+  }
+  #stretch {
+   border: 10px solid transparent;
+   padding: 10px;
+   border-image: url(../../media/border.png) 50 stretch;
+  }
+ </style>
+</head>
+<body>
+ <p>Image used: </p>
+ <img src="../../media/border.png"/><br/><br/>
+ <div id="round">repeated border image</div><br/>
+ <div id="stretch">stretched border image</div>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="css0602.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>border-image:</b> (all-in-one declaration)</p>
+			<p><b>border-image-source:</b> (1 to 4 values)</p>
+			<p><b>border-image-slice:</b> cut off from the edge (1 to 4 values)</p> 
+			<p><b>border-image-width:</b> (1 to 4 values)</p>
+			<p><b>border-image-outset:</b> extension of the image beyond the border (1 to 4 values)</p>
+			<p><b>border-image-repeat:</b> (1 to 2 values)</p>
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<div class="examples">
+		<div class="exTitle">
+			<p id="css0603">Radius, Shadow, and Wrapping</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="31" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Radius, Shadow, and Wrapping</title>
+ <style>
+  div {
+   box-shadow: 10px 10px 30px inset;
+   width: 90px;
+   height: 70px;
+   background: lightgreen;
+  }
+  button {
+   box-shadow: 10px 10px 30px;
+   border-radius: 30px;
+  }
+ </style>
+</head>
+<body>
+ <div></div>
+ <button>I do nothing</button>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="css0603.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>border[-bottom-left|-bottom-right|top-left|top-right]-radius:</b> 
+				(all-in-one declaration of border-radius)</p>
+			<p><b>box-shadow:</b> </p>
+			<p><b>box-decoration-break:</b> </p> 
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<div class="examples">
+		<div class="exTitle">
+			<p id="css0604">Flexible Box</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="40" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Generated Content Properties</title>
+ <style>
+  .box {
+   display: -moz-box;
+   display: box;
+    width: 200px;
+   height: 200px;
+   border: 1px solid black;
+   -moz-box-align: center;
+   -moz-box-pack: center;
+   -moz-box-direction: reverse;
+   -moz-box-orient: vertical;
+  }
+  .o1 {
+   margin: 5px;
+   -moz-box-ordinal-group: 1;
+   box-ordinal-group: 1;
+  }
+  .o2 {
+   margin: 5px;
+   -moz-box-ordinal-group: 2;
+   box-ordinal-group: 2;			
+  }
+</style>
+</head>
+<body>
+ <div class="box">
+  <div class="o2">1</div>
+  <div class="o1">22</div>
+  <div class="o1">333</div>
+  <div class="o1">4444</div>
+  <div class="o1">55555</div>
+ </div>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="css0604.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>(The code here only works for firefox. The css code below is becoming non-standard)</b> </p>
+			<p><b>box-align:</b> the top/bottom alignment of the children</p>
+			<p><b>box-pack:</b> the left/right alignment of the children</p>
+			<p><b>box-direction:</b> the display order of the children</p> 
+			<p><b>box-flex:</b> specifies that an element stretches or shrinks with the box</p>
+			<p><b>box-flex-group:</b> assigns the element to a flex group</p>
+			<p><b>box-lines:</b> specifies the number of lines to place the children in</p>
+			<p><b>box-ordinal-group:</b> the lower the number, the more precedence it has to be displayed</p>
+			<p><b>box-orient:</b> the orientation of the box display</p>		
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<div class="examples">
+		<div class="exTitle">
+			<p id="css0605">Multiple Columns</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="33" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Multiple Columns</title>
+ <style>
+  div {
+   background-color: orange;
+   width: 300px;
+   columns: 3 auto;
+   column-gap: 40px;
+   column-rule 4px dotted purple;
+  }
+ </style>
+</head>
+<body>
+ <div>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ </div>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="css0605.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>columns:</b> (all-in-one declaration for column-width and column-count)</p>
+			<p><b>column-width:</b> </p>
+			<p><b>column-count:</b> </p> 
+			<p><b>column-fill:</b> the lengths of the columns</p>
+			<p><b>column-gap:</b> </p>
+			<p><b>column-span:</b> the element spans across columns</p>
+			<p><b>column-rule:</b> (all-in-one declaration)</p>
+			<p><b>column-rule-color:</b> </p>
+			<p><b>column-rule-style:</b> </p>
+			<p><b>column-rule-width:</b> </p>
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<p>Back to <a href="../cssIndex.html">HTML Table of Contents</a></p>
+</body>
+</html>

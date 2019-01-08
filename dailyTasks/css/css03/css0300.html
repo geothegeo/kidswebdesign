@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selectors</title>
+	<style type="text/css">
+		#list { list-none:none; }
+		#list li, #list a { height:200px; display:block; }
+		#lamp1 { height: 200px; width:200px; }
+		#lamp1 { background: url("../../media/logo.png") }
+		#lamp1 a:hover { background: url("../../media/lLamp.jpg") -1000px -800px; }
+		#patch { height: 200px; width:200px; }
+		#patch { background: url("../../media/logo.png") }
+		#patch a:hover { background: url("../../media/rLamp.jpg") -575px -248px; }
+	</style>
+</head>
+<body>
+	Flip the image:
+	<ul id="list">
+		<li id="lamp1"><a href="a.html"></a></li>
+		<li id="patch"><a href="b.html"></a></li>
+	</ul>
+</body>
+</html>

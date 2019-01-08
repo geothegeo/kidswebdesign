@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+</html>
+<head>
+	<title>CSS List and Table Properties</title>
+	<link rel="stylesheet" type="text/css" href="../../styles/dailyTasks.css">
+</head>
+<body>
+	<h3>5) List and Table Properties</h3>
+<!-------------------------------------------------------------------------------------------------->		
+	<div class="examples">
+		<div class="exTitle">
+			<p id="css0501">List Properties</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="28" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>List Properties</title>
+ <style>
+  ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+  }
+  li {
+   padding-left: 1em;
+   text-indent: -.7em;
+  }
+  li:before {
+   content: ">> ";
+   color: red;
+  }
+</style>
+</head>
+<body>
+ <ul>
+  <li>Cat</li>
+  <li>Dog</li>
+  <li>Fish</li></ul>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="css0501.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>list-style:</b> (all-in-one declaration)</p>
+			<p><b>list-style-type:</b> </p>
+			<p><b>list-style-position:</b> </p>
+			<p><b>list-style-image:</b> </p>
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<div class="examples">
+		<div class="exTitle">
+			<p id="css0502">Font properties</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="32" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Table Properties</title>
+ <style>
+  table {
+   margin:auto;
+   border-collapse: collapse;
+   table-layout: fixed;
+   width: 200px;
+   word-wrap: break-word;
+  }
+  td { border: solid 1px purple; }
+  tr:nth-child(odd){ background:grey; }
+  tr:nth-child(even){ background:white; }
+ </style>
+</head>
+<body>
+ <table>
+  <tr><td>George</td><td>72</td></tr>
+  <tr><td>Yang</td><td>48</td></tr>
+  <tr><td>Thomas</td><td>15</td></tr>
+  <tr><td>Abcdefghijklmnopqrestuvwxyz</td><td>96</td></tr>
+  <tr><td>Alice</td><td>35</td></tr>
+ </table>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="css0502.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>border-collapse:</b> </p>
+			<p><b>border-spacing:</b> </p>
+			<p><b>caption-side:</b> </p> 
+			<p><b>empty-cells:</b> </p>
+			<p><b>table-layout:</b> </p>
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<p>Back to <a href="../cssIndex.html">HTML Table of Contents</a></p>
+</body>
+</html>

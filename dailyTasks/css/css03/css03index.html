@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+</html>
+<head>
+	<title>CSS Background Properties</title>
+	<link rel="stylesheet" type="text/css" href="../../styles/dailyTasks.css">
+</head>
+<body>
+	<h3>3) Background Properties</h3>
+<!-------------------------------------------------------------------------------------------------->		
+	<div class="examples">
+		<div class="exTitle">
+			<p id="css0300">Background Properties</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="32" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Selectors</title>
+ <style type="text/css">
+  #list { list-none:none; }
+  #list li, #list a { height:200px; display:block; }
+  #lamp1 { height: 200px; width:200px; }
+  #lamp1 { background: url("../../media/logo.png") }
+  #lamp1 a:hover { background: url("../../media/lLamp.jpg") -1000px -800px; }
+  #patch { height: 200px; width:200px; }
+  #patch { background: url("../../media/logo.png") }
+  #patch a:hover { background: url("../../media/rLamp.jpg") -575px -248px; }
+ </style>
+</head>
+<body>
+ Flip the image:
+ <ul id="list">
+  <li id="lamp1"><a href="a.html"></a></li>
+  <li id="patch"><a href="b.html"></a></li>
+ </ul>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="css0300.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>background:</b> (all-in-one declaration)</p>
+			<p><b>background-attachment:</b> specifies how to move the background relative to the viewport</p>
+			<p><b>background-clip:</b> sets whether an element's background color or image extends underneath its border</p>
+			<p><b>background-color:</b> sets the color of the background</p>
+			<p><b>background-image:</b> sets one or more background images for an element</p>
+			<p><b>background-origin:</b> sets the background positioning area</p>
+			<p><b>background-position:</b> sets the starting position of a background image</p>
+			<p><b>background-repeat:</b> sets if/how a background image will be repeated</p>	
+			<p><b>background-size:</b>  specifies the size of the background images</p>
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<p>Back to <a href="../cssIndex.html">HTML Table of Contents</a></p>
+</body>
+</html>

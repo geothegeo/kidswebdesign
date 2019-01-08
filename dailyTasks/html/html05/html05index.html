@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+</html>
+<head>
+	<title>HTML Structural Elements</title>
+	<link rel="stylesheet" type="text/css" href="../../styles/dailyTasks.css">
+</head>
+<body>
+	<h3>5) Other References</h3>	
+<!-------------------------------------------------------------------------------------------------->		
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0501">5.1) Global Attributes</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="41" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Global Attributes</title>
+ <style>
+  #div1 { width: 70px; height: 70px; 
+	padding: 3px; border: 1px solid #aaaaaa; }
+ </style>
+ <script>
+  function allowDrop(ev) {
+   ev.preventDefault();
+  }
+  function drag(ev) {
+   ev.dataTransfer.setData("text", ev.target.id);
+  }
+  function drop(ev) {
+   ev.preventDefault();
+   var data = ev.dataTransfer.getData("text");
+   ev.target.appendChild(document.getElementById(data));
+  }
+ </script>
+</head>
+<body>
+ <p contenteditable title="Click to edit">
+ Hello World!</p>
+ <p>Drag the image into the square:</p>
+ <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+ <br/>
+ <img id="drag1" src="../../media/logo.png" draggable="true"
+  ondragstart="drag(event)" width="69" height="69"/>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="html0501.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>accesskey</b>=key, shortcut to activate tag </p>	
+			<p><b>class</b>=text, for style sheets and microformats</p>	
+			<p><b>contenteditable</b>, whether it can be edited </p>	
+			<p><b>contextmenu</b>=text, appears on a right click </p>	
+			<p><b>dir</b>={rtl|ltr}, direction of content </p>	
+			<p><b>draggable</b>={true|false|auto}, draggablility </p>	
+			<p><b>dropzone</b>={copy|move|link}, drag destination </p>	
+			<p><b>hidden</b>, disables the element </p>	
+			<p><b>id</b>=text, element identification </p>	
+			<p><b>lang</b>=lang_code, language</p>	
+			<p><b>spellcheck</b>{"true"|"false"}, checks for spelling </p>	
+			<p><b>style</b>=CSS_style, inline style </p>	
+			<p><b>tabindex</b>=num, the tabbing order </p>	
+			<p><b>title</b>=text, info to display on mouse over </p>	
+		</div>			
+	</div><br />		
+<!-------------------------------------------------------------------------------------------------->	
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0502">5.2) Events</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="35" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Events</title>
+ <script>
+  function showMouseP(event){
+   document.getElementByTagName("p")[0].innerHTML=
+   "mouse at("+event.clientX+","+event.clientY")\n";
+  }
+ </script>
+</head>
+<body onscroll="alert(document.body.scrollTop)"
+  onkeydown="alert(event.keyCode)"
+  onmousemove="showMouseP(event)"
+  onbeforeunload="alert('Sad to see you leave!')">
+ <button onclick="scrollBy(0,300)">
+ Scroll down</button>
+ <p></p>
+ <pre>
+	asided
+	asd
+	addressad
+	addressadda
+	datada
+	sda
+	sdaasd
+	.....
+ </pre>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="html0502.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>Event Types:</b> </p>	
+			<p>Window events that trigger a script </p>	
+			<p>Form events that trigger a script </p>	
+			<p>Keyboard events that trigger a script </p>	
+			<p>Mouse events that trigger a script </p>	
+			<p>Media events that trigger a script </p>		
+		</div>			
+	</div><br />			
+<!-------------------------------------------------------------------------------------------------->	
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0503">5.3) DOCTYPE</p>
+		</div>
+		<div style="border: 1px turquoise solid; margin-top: 20px; position: relative;	width: 65%;">
+			<p class="exLbl" style="margin: 0;">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="27" cols="80">
+<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+	"http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+	"http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" 
+	"http://www.w3.org/TR/html4/frameset.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0 Level 2//EN">
+<html>
+<head>
+	<title>DOCTYPEs</title>
+</head>
+<body>
+
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>HTML5(2012)</b> deprecates tags from previous versions</p>	
+			<p><b>HTML4.01 and XHTML 1.0 Strict(2000)</b> excludes presentationl or deprecated elemets. Framesets are not allowed</p>	
+			<p><b>HTML4.01 and XHTML 1.0 Transitional(2000)</b> includes all elements but framsets are not allowed</p>	
+			<p><b>HTML4.01 and XHTML 1.0 Frameset(2000)</b> includes all elements and allows the use of framesets</p>	
+			<p><b>XHTML 1.1(2001)</b> </p>	
+			<p><b>HTML 3.2(2001)</b> </p>	
+			<p><b>HTML 3.0(1995)</b> </p>	
+			<p><b>HTML 2.0(1995)</b> </p>			
+		</div>			
+	</div><br />		
+<!-------------------------------------------------------------------------------------------------->
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0504">5.4) Character Sets</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="20" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Character Sets</title>
+</head>
+<body>
+ <p>Chinese Yen: &#165; or &yen;</p>
+ <p>British Pount: &#163; or &pound;</p>
+ <p>American Cent: &#162; or &cent;</p>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="html0504.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p>first 128 characters of ISO-8859-1 is the same as the original ASCII</p>
+			<p>The higher part of ISO-8859-1 contains some commonly used special characters</p>		
+		</div>			
+	</div><br />		
+<!-------------------------------------------------------------------------------------------------->	
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0505">5.5) Language</p>
+		</div>
+		<div style="border: 1px turquoise solid; margin-top: 20px; position: relative;	width: 65%;">
+			<p class="exLbl" style="margin: 0;">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="20" cols="80">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Language</title>
+</head>
+<body>
+
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p>All languages have a two-letter code</p>		
+		</div>			
+	</div><br />		
+<!-------------------------------------------------------------------------------------------------->	
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0506">5.6) URL Encoding</p>
+		</div>
+		<div style="border: 1px turquoise solid; margin-top: 20px; position: relative;	width: 65%;">
+			<p class="exLbl" style="margin: 0;">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="20" cols="80">
+
+			</textarea>
+		</div>				
+
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p>Some characters cannot be sent in the URL directly. These unsafe ASCII characters
+				are encoded with a "%" followed by two hexadecimal digits.</p>
+		</div>			
+	</div><br />		
+<!-------------------------------------------------------------------------------------------------->	
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0507">5.7) MIME Types</p>
+		</div>
+		<div style="border: 1px turquoise solid; margin-top: 20px; position: relative;	width: 65%;">
+			<p class="exLbl" style="margin: 0;">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="20" cols="80">
+
+			</textarea>
+		</div>				
+		
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p>Multipurpose Internet Mail Extensions(MIME) type referst to a standard defined for a file.</p>	
+			<p>A complete list can be found <a href="http://www.iana.org/assignments/media-types/media-types.xhtml">
+				here</a>
+		</div>			
+	</div><br />		
+<!-------------------------------------------------------------------------------------------------->	
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0508">5.8) Media-Query</p>
+		</div>
+		<div style="border: 1px turquoise solid; margin-top: 20px; position: relative;	width: 65%;">
+			<p class="exLbl" style="margin: 0;">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="20" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Media-Query</title>
+ <link media="handheld, screen and (min-width:500px),
+				tv and (scan:interlace), 
+				print and (resolution:300dpi),
+				not screen and (monochrome:2),
+				handheld and (grid:1)">
+</head>
+<body>
+ 
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p>Media-query specifies what devices the resource is optimized for. If assumes
+				the following format:</p>	
+			<p>[not|only]device[and([min-|max-]vname:value)]</p>	
+		</div>			
+	</div><br />		
+<!-------------------------------------------------------------------------------------------------->		
+	<p>Back to <a href="../htmlindex.html">HTML Table of Contents</a></p>
+</body>
+</html>

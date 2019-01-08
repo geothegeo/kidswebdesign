@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+</html>
+<head>
+	<title>HTML Structural Elements</title>
+	<link rel="stylesheet" type="text/css" href="../../styles/dailyTasks.css">
+</head>
+<body>
+	<h3>2) Text Elements</h3>		
+<!-------------------------------------------------------------------------------------------------->	
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0201">2.1) Hyperlink</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="20" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Hyperlinking</title>
+</head>
+<body>
+ Click <a href="https://www.kidswebdesign.com">here</a> to go to kidswebdesign.
+ <p>You can send an email like <a href="mailto:testing@example?Subject=Ji">this</a>.</p>
+ <p>You can download a file like <a href="logo.png">this</a>.</p>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="html0201.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>&lt;a&gt;</b> specifies a hyperlink to an ext. html file</p>	
+		</div>			
+	</div><br />	
+<!-------------------------------------------------------------------------------------------------->	
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0202">2.2) Formatting</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="29" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Formatting</title>
+</head>
+<body>
+ <hgroup>
+  <h1>Formatting</h1>
+   <h2>-- Sizing, Decoration, and Spacing</h2>
+ </hgroup>
+ <b>bold</b> <br/>
+ <i>italic</i> <br/>
+ <u>underline</u> <br/>
+ X<sub>1</sub> <br/>
+ X<sup>2</sup> <br/>
+ <mark>mark</mark> <br/>
+ <small>small<small> <br/>
+ <q>quote></q> <br/>
+ <s>strikethrough</s> <br/>
+ <del>deleted test</del> <br/>
+ <ins>inserted test</ins> <br/>
+ <pre>See ?
+	Space  does    not
+		collapse  here.
+ </pre>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="html0202.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>&lt;h1&gt; ... &lt;h6&gt;</b> define headings</p>
+			<p><b>&lt;hgroup&gt;</b> groups heading tags</p>
+			<p><b>&lt;b&gt;</b> bold</p>
+			<p><b>&lt;i&gt;</b> italic</p>
+			<p><b>&lt;u&gt;</b> underline</p>			
+			<p><b>&lt;sub&gt;</b> subscript</p>
+			<p><b>&lt;sup&gt;</b> superscript</p>
+			<p><b>&lt;mark&gt;</b> highlights</p>
+			<p><b>&lt;small&gt;</b> small font</p>
+			<p><b>&lt;s&gt;</b> strikethrough</p>
+			<p><b>&lt;q&gt;</b> quotes</p>
+			<p><b>&lt;del&gt;</b> deleted text</p>
+			<p><b>&lt;ins&gt;</b> inserted text</p>
+			<p><b>&lt;pre&gt;</b> preformatted text</p>
+			</div>			
+	</div><br />		
+<!-------------------------------------------------------------------------------------------------->	
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0203">2.3) Orientation</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="20" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Orientation</title>
+ <meta charset="UTF-8"/>
+</head>
+<body>
+ The <b>&#60ruby&#62</b> tag can be used to show the
+ pronunciation of an East-<wbr/>Asian word. 
+ For example:
+ <ruby>网<rt>wang3</rt>上<rt>shang4</rt></ruby>
+ This is <bdo dir="rtl">inverted</bdo>.
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="html0203.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>&lt;ruby&gt;</b> writes text directly above others</p>
+			<p><b>&lt;rt&gt;</b> describe text above (inside &lt;ruby&gt;)</p>
+			<p><b>&lt;rp&gt;</b> instructs &lt;ruby&gt; if it is not supported (inside &lt;ruby&gt;)</p>
+			<p><b>&lt;bdi&gt;</b> isolates uniquely formatted text</p>
+			<p><b>&lt;bdo&gt;</b> bidirectional override</p>
+			<p><b>&lt;wbr&gt;</b> defines line-break</p>		
+		</div>			
+	</div><br />			
+<!-------------------------------------------------------------------------------------------------->	
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0204">2.4) Special Meanings</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="23" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Information</title>
+</head>
+<body>
+ This is <em>emphasized</em>.<br/>
+ This is <strong>important</strong>.<br/>
+ Made in the <abbr>UK</abbr>.<br/>
+ Command:<code>alert("Hello");</code>.<br/>
+ Key:<kbd>CTRL+S</kbd>.<br/>
+ Variable:<var>i</var>.<br/>
+ More information can be found at 
+ <cite>W3C Recommendation for HTML</cite>.<br/>
+ Written at <time datetime="2019-01-01 11:40">
+ In <address>Tanjung Aru Beach, Kota Kinabalu, Malaysia.</address><br/>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="html0204.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>&lt;em&gt;</b> emphasizes or italicizes text</p>
+			<p><b>&lt;strong&gt;</b> bolds important text</p>
+			<p><b>&lt;abbr&gt;</b> contains abbreviation</p>
+			<p><b>&lt;samp&gt;</b> defines sample output in monospace</p>
+			<p><b>&lt;kbd&gt;</b> defines keyboard input</p>
+			<p><b>&lt;var&gt;</b> defines a italicized variable</p>
+			<p><b>&lt;address&gt;</b> defines a physical addr in italics</p>
+			<p><b>&lt;cite&gt;</b> contains the title of a piece of work in italics</p>
+			<p><b>&lt;time&gt;</b> defines time</p>
+		</div>			
+	</div><br />			
+<!-------------------------------------------------------------------------------------------------->
+	<p>Back to <a href="../htmlindex.html">HTML Table of Contents</a></p>
+</body>
+</html>

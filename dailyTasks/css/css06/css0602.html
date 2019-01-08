@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Border Image</title>
+	<style>
+		div {
+			border-width: 15px;
+			width: 160px;
+			padding: 10px 20px;
+		}
+		#round {
+			border: 10px solid transparent;
+			padding: 10px;
+			border-image: url(../../media/border.png) 30 round;
+		}
+		#stretch {
+			border: 10px solid transparent;
+			padding: 10px;
+			border-image: url(../../media/border.png) 50 stretch;
+		}
+	</style>
+</head>
+<body>
+	<p>Image used: </p>
+	<img src="../../media/border.png"/><br/><br/>
+	<div id="round">repeated border image</div><br/>
+	<div id="stretch">stretched border image</div>
+</body>
+</html>

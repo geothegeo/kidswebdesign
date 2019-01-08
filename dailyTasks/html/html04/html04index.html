@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+</html>
+<head>
+	<title>HTML Structural Elements</title>
+	<link rel="stylesheet" type="text/css" href="../../styles/dailyTasks.css">
+</head>
+<body>
+	<h3>4) Form Elements</h3>	
+<!-------------------------------------------------------------------------------------------------->		
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0401">4.1) Basics</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="30" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Form Basics</title>
+</head>
+<body>
+ <form id="frm" method="get" action="action.php"
+  style="width:280px"><fieldset>
+  <legend>Make A Report</legend>
+  <br />Type:<br/>
+  <select name="type" size="8">
+   <optgroup label="Normal">
+   <option>Money Received</option>
+   <option>Employeed Off</option>
+   <option selected>New Employee</option>
+   </optgroup>
+  </select>
+  <br /><br />Message:<br />
+  <textarea name="message" rows="4" cols="30"
+   autofocus wrap="no">Here is the report.&lt;/textarea&gt;
+  <button type="submit">SUBMIT</button>
+ </fieldset></form>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="html0401.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>&lt;form&gt;</b> contains all form elements</p>	
+			<p><b>&lt;fieldset&gt;</b> draws a box around related elements</p>	
+			<p><b>&lt;legend&gt;</b> defines the caption for the form (inside &lt;fieldset&gt;)</p>	
+			<p><b>&lt;button&gt;</b> creates a clickable button</p>	
+			<p><b>&lt;select&gt;</b> makes a drop-down list with &lt;option&gt;</p>	
+			<p><b>&lt;option&gt;</b> defines the options within &lt;select&gt; or &lt;datalist&gt;</p>	
+			<p><b>&lt;optgroup&gt;</b> groups the &lt;select&gt; tags</p>	
+			<p><b>&lt;textarea&gt;</b> creates a multiline textbox</p>	
+		</div>			
+	</div><br />		
+<!-------------------------------------------------------------------------------------------------->	
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0402">4.2) Generic &lt;input&gt;</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="68" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Generic Input Types</title>
+</head>
+<body><form action="process.asp">
+ Name: <input type="text" name="name" autofocus
+  placeholder="Enter your name here" required
+  autosave="123" pattern="{A-Za-z}*" x-webkit-speech/>
+ <br/><br/>	
+ Age: <input type="number" name="age" value="5" 
+  min="0" max="100" step="1">
+ <br/><br/>
+ Dates: <input type="date" name="dt" value="2019-01-02";/>
+ <br/><br/>	
+ Time: <input type="time" name="tm" value="17:00:00";/>
+ <br/><br/>	
+ Department:
+ <input list="departments" name="department" spellcheck="true"/>
+  <datalist id="departments">
+   <option value="Finance"></option>
+   <option value="Management"></option>
+   <option value="Marketing"></option>
+   <option value="Public Relations"></option>
+   <option value="Research"></option>
+  </datalist>
+ <br/><br/>	
+ Personal Website: <input type="url" name="website" value="http://"/>
+ <br/><br/>
+ Email: <input type="email" name="em" maxlength="30"/>
+ <br/><br/>	
+ Telephone: <input type="tel" name="telephone" value="">
+ <br/><br/>
+ Sex: <input type="radio" name="sex" id="f" />
+  <label for="f">female</label>
+ <input type="radio" name="sex" id="m" />
+  <label for="m">male</label>
+ <br/><br/>
+ Color: <input type="color" name="color"/>
+ <br/><br/>
+ Rating: <input type="range" min="0" max="100" step="1" value="90"/>
+ <br/><br/>
+ <input type="checkbox" id="confirm" name="conditions"/>
+  <label for="confirm">
+   I have read the conditions.
+  </label>
+ <br/><br/>
+ Search: <input type="search" name="q" value="" autocomplete="off"/>
+ <input type="submit"/>
+</form>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="html0402.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>&lt;input&gt;</b> creates a generic input control</p>
+			<ul style="padding: 0; padding-left: 1em; margin: 0; list-style-position: inside;">	
+				<li>text</li>
+				<li>number</li>
+				<li>date</li>
+				<li>time</li>
+				<li>list</li>
+				<li>url</li>
+				<li>email</li>
+				<li>tel</li>
+				<li>radio</li>
+				<li>color</li>
+				<li>range</li>
+				<li>checkbox</li>
+				<li>search</li>
+				<li>submit</li>
+			</ul>
+			<p><b>&lt;datalist&gt;</b> displays a textbox with autocomplete feature (inside &lt;input&gt;)</p>	
+			<p><b>&lt;label&gt;</b> displays a label for a check box, a radio option etc.</p>		
+		</div>			
+	</div><br />			
+<!-------------------------------------------------------------------------------------------------->	
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0403">4.3) Others</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="20" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Output</title>
+</head>
+<body>
+ <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+  <input type="range" id="b" name="b" value="50" /> + 
+  <input type="number" id="a" name="a" value="10" /> =
+  <output for="a b" name="result"></output>
+ </form>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="html0403.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>&lt;output&gt;</b> marks the result of a calculation</p>	
+			<p><b>&lt;keygen&gt;</b> creates a key-pair generator field</p>	
+		</div>			
+	</div><br />		
+<!-------------------------------------------------------------------------------------------------->	
+	<p>Back to <a href="../htmlindex.html">HTML Table of Contents</a></p>
+</body>
+</html>

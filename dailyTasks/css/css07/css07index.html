@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+</html>
+<head>
+	<title>CSS Positioning Properties</title>
+	<link rel="stylesheet" type="text/css" href="../../styles/dailyTasks.css">
+</head>
+<body>
+	<h3>7) Positioning Properties</h3>
+<!-------------------------------------------------------------------------------------------------->		
+	<div class="examples">
+		<div class="exTitle">
+			<p id="css0701">General Positioning</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="28" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>General Positioning</title>
+</head>
+<body style="margin:0">
+ <div id="containder" style="width:100vw">
+  <div id="header" style="background-color:#FFF888;">
+   <span>Header</span>
+  </div>
+  <div id="menu" style="background-color:#224488;
+   height:250px; width:100px; float:left;">
+   <h3 style="margin:20px; width:50px; border:black dotted 5px; 
+    outline:dashed 3px grey; color:white;">Menu</h3>
+  </div>
+  <div id="content" style="background-color:#CCCCCC;
+   height:250px; width:300px; float:left; position:relative">
+   <h3>Content</h3>
+    <h3 style="position:absolute; bottom:5px">
+	 The End</h3>
+  </div>
+  <div id="footer" style="background-color:#FFF888; clear:both;">
+   <h3>Footer</h3>
+  </div>
+ </div>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="css0701.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>{top|right|bottom|left}:</b> </p>
+			<p><b>position:</b> </p>
+			<p><b>float:</b> </p>
+			<p><b>clear:</b> </p>
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<div class="examples">
+		<div class="exTitle">
+			<p id="css0702">Visibility</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="15" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Visibility</title>
+</head>
+<body style="overflow:hidden;">
+ <div style="background:orange; display:inline-block;">
+  &lt;textarea&gt; style="overflow:auto; resize:none;" wrap="off">
+   abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz&lt;/textarea&gt;
+ </div>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="css0702.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>visibility:</b> </p>
+			<p><b>display:</b> </p>
+			<p><b>z-index:</b> stacking of elements from low to high</p>
+			<p><b>opacity:</b> </p> 
+			<p><b>clip:</b> the cut shape of an element</p>
+			<p><b>overflow[-x|-y]:</b> </p>
+			<p><b>overflow-style:</b> </p>
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<div class="examples">
+		<div class="exTitle">
+			<p id="css0703">Interface</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="48" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+<title>Interface</title>
+ <style>
+  .center {
+   margin: auto;
+   position: absolute;
+   top:0; left:0; bottom:0; right:0;
+  }
+  .dialogBox {
+   height: 50%;
+   width: 50%;
+   outline: 2px dotted;
+   font-size: 3vw;
+   background: rgba(200,200,0,0.8);
+  }
+  #close {
+   position: absolute;
+   left: 91%
+  }
+  #close:hover {
+   font-width: bold;
+   cursor: pointer;
+  }
+  .msgBox {
+   width: 75%;
+   height: 5vw;
+  }
+ </style>
+</head>
+<body>
+ <a href="http://yahoo.com" style="cursor:default; point-events:none;">
+  Disabled Link</a>
+ <span style="background:black; color:white"
+  onclick="document.getElmeentsByTagName('div')[0].style.display='block';">
+  Show Dialog Box</span>
+ <div class="center dialogBox">
+  <span id="close" onclick="document.getElmeentsByTagName('div')[0].style.display='none';">
+  X</span>
+  <p class="ccenter boxMsg">An error has occurred.</p>
+ </div>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="css0703.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>cursor:</b> </p>
+			<p><b>pointer-events:</b> </p>
+			<p><b>nav-index:</b> </p> 
+			<p><b>nav-{left|right|up|down}:</b> </p>
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<div class="examples">
+		<div class="exTitle">
+			<p id="css0704">Transformation</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="27" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Transformation</title>
+ <style>
+  div {
+   left: 75px;
+   padding: 25px;
+   position: aboslute;
+   border: 1px solid black;
+   background-color: orange;
+   transform: rotate(25deg);
+   transform-origin: 20% 20%;
+   -webkit-transform: rotate(25deg);
+   -webkit-transform-origin: 20% 20%;
+  }
+ </style>
+</head>
+<body>
+ <div id="div1">
+  <div id="div2">
+   Testing
+  </div>
+ </div>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="css0704.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>rotation-point:</b> (with roation)</p>
+			<p><b>rotation:</b> (with roation-point)</p>
+			<p><b>transform:</b> </p> 
+			<p><b>transform-origin:</b> (with transform)</p>
+			<p><b>transform-style:</b> (with transform)</p>
+			<p><b>perspective:</b> </p>
+			<p><b>perspective-origin:</b> (with perspective)</p>
+			<p><b>backface-visibility:</b> the visibility of the backside</p>
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<p>Back to <a href="../cssIndex.html">HTML Table of Contents</a></p>
+</body>
+</html>

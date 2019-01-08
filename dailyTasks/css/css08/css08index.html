@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+</html>
+<head>
+	<title>CSS </title>
+	<link rel="stylesheet" type="text/css" href="../../styles/dailyTasks.css">
+</head>
+<body>
+	<h3>8) Generated Content Properties</h3>
+<!-------------------------------------------------------------------------------------------------->		
+	<div class="examples">
+		<div class="exTitle">
+			<p id="css0800">Generated Content Properties</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="30" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Generated Content Properties</title>
+ <style>
+  body { counter-reset:section; }
+  h1 { counter-reset:subsection; }
+  h1:before { counter-increment:section; 
+   content:"Identity " counter(section)".(" attr(class) ")";}
+  h2:before { counter-increment:subsection; 
+   content:counter(section)"." counter(subsection)" ";}
+  q { quotes:"<"">""'""'";}
+ </style>
+</head>
+<body>
+ <h1 class="R"><q><q>Main</q> Race</q></h1>
+ <h2>Dutch</h2>
+ <h2>American</h2>
+ <h2>Indean</h2>
+ <h1 class="P"><q>Place</q></h1>
+ <h2>London</h2>
+ <h2>Beijing</h2>
+ <h1 class="S"><q>Sex</q></h1>
+ <h2>Male</h2>
+ <h2>Femaile</h2>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="css0800.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>content:</b> inserts generated content(with :before or :after)</p>
+			<p><b>counter-reset:</b> creates or resets one or more CSS counters</p>
+			<p><b>counter-increment:</b> increases or decreases the value of one or more CSS counters</p>
+			<p><b>quotes:</b> sets the type of quotation marks for quotations</p>
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<p>Back to <a href="../cssIndex.html">HTML Table of Contents</a></p>
+</body>
+</html>

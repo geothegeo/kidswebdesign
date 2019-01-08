@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interface</title>
+	<style>
+		.center {
+			margin: auto;
+			position: absolute;
+			top:0; left:0; bottom:0; right:0;
+		}
+		.dialogBox {
+			height: 50%;
+			width: 50%;
+			outline: 2px dotted;
+			font-size: 3vw;
+			background: rgba(200,200,0,0.8);
+		}
+		#close {
+			position: absolute;
+			left: 91%
+		}
+		#close:hover {
+			font-width: bold;
+			cursor: pointer;
+		}
+		.msgBox {
+			width: 75%;
+			height: 5vw;
+		}
+	</style>
+</head>
+<body>
+	<a href="http://yahoo.com" style="cursor:default; point-events:none;">
+		Disabled Link</a>
+	<span style="background:black; color:white"
+		onclick="document.getElmeentsByTagName('div')[0].style.display='block';">
+		Show Dialog Box</span>
+	<div class="center dialogBox">
+		<span id="close" onclick="document.getElmeentsByTagName('div')[0].style.display='none';">
+		X</span>
+		<p class="ccenter boxMsg">An error has occurred.</p>
+	</div>
+</body>
+</html>

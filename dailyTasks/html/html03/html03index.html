@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+</html>
+<head>
+	<title>HTML Structural Elements</title>
+	<link rel="stylesheet" type="text/css" href="../../styles/dailyTasks.css">
+</head>
+<body>
+	<h3>3) Figure Elements</h3>	
+<!-------------------------------------------------------------------------------------------------->		
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0301">3.1) List</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="31" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lists</title>
+</head>
+<body>
+ <ol reversed>
+  <li>An ordered list has a number in front of each item.</li>
+  <li>There are five types of ordered list.</li>
+  <li>The order can be reversed.</li>
+ </ol><br />
+ <ul>
+  <li>An unordered list does not show any number.</li>
+  <li>A list can be controlled in more ways with CSS.</li>
+  <li>The order can be changed.</li>
+ </ul><br />
+ <dl>
+  <dt><dfn>dl</dfn></dt><dd>definition list</dd>
+  <dt><dfn>dt</dfn></dt><dd>definition term</dd>
+  <dt><dfn>dd</dfn></dt><dd>definition description</dd>
+ </dl><br />
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="html0301.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>&lt;ol&gt;</b> ordered list</p>
+			<p><b>&lt;ul&gt;</b> unordered list</p>
+			<p><b>&lt;li&gt;</b> list item (inside &lt;ol&gt; or &lt;ul&gt;)</p>
+			<p><b>&lt;dl&gt;</b> definition list</p>
+			<p><b>&lt;dt&gt;</b> defition term (inside &lt;dl&gt;)</p>
+			<p><b>&lt;dfn&gt;</b> defines instance of a term</p>
+			<p><b>&lt;dd&gt;</b> definition description (inside &lt;dl&gt;)</p>
+		</div>			
+	</div><br />		
+<!-------------------------------------------------------------------------------------------------->	
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0302">3.2) Progress and Meter</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="20" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Fraction Display</title>
+</head>
+<body>
+ Progress:
+ <progress max="100" value="80">
+  80% complete</progress>
+ <br/><br/>
+ Meter:
+ <meter min="200" max="500" value="400"
+  low="250" high="350">400C</meter>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="html0302.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>&lt;progress&gt;</b> defines progress</p>
+			<p><b>&lt;meter&gt;</b> defines a scalar measurement</p>
+		</div>			
+	</div><br />			
+<!-------------------------------------------------------------------------------------------------->	
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0303">3.3) Table</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="42" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Table</title>
+</head>
+<body>
+<table>
+ <caption>HTML Table</caption>
+ <colgroup>
+  <col style="background-color:grey" />
+  <col span="2" style="background-color:yellow" />
+  <col style="background-color:orange" />
+ </colgroup>
+ <thead>
+  <tr><th>Name</th>
+   <td>Wins</td>
+   <td>Losses</td>
+   <td>Score</td>
+  </tr>
+ </thead>
+ <tfoot>
+  <tr><th colspan=3>Total score:</th>
+      <td>17</td>
+  </tr>
+ </tfoot>
+ <tbody>
+  <tr><th>George</th>
+      <td>20</td>
+      <td>15</td>
+      <td>5</td>
+  </tr>
+  <tr><th>Bill</th>
+      <td>15</td>
+      <td>3</td>
+      <td>12</td>
+  </tr>
+ </tbody>
+</table><br />
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="html0303.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>&lt;tr&gt;</b> defines a table</p>
+			<p><b>&lt;th&gt;</b> defines a table row (inside &lt;table&gt;)</p>
+			<p><b>&lt;td&gt;</b> defines a table cell (inside &lt;tr&gt;)</p>
+			<p><b>&lt;caption&gt;</b> defines a caption (immediately after &lt;table&gt;)</p>
+			<p><b>&lt;col&gt;</b> specifies the properties for entire col (inside &lt;colgroup&gt;)</p>
+			<p><b>&lt;colgroup&gt;</b> groups &lt;col&gt; (inside &lt;table&gt;)</p>
+			<p><b>&lt;thead&gt;</b> optionally groups the &lt;tr&gt; tags, represents first row</p>
+			<p><b>&lt;tfoot&gt;</b> optionally groups the &lt;tr&gt; tags, represents central rows</p>
+			<p><b>&lt;tbody&gt;</b> optionally groups the &lt;tr&gt; tags, represents last row</p>
+		</div>			
+	</div><br />		
+<!-------------------------------------------------------------------------------------------------->	
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0304">3.4) Image</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="20" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Image</title>
+</head>
+<body>
+ <map name="center">
+  <area shape="circle" coords="50,50,44" alt="circle" href="http://google.com" />
+ </map>
+ <figure>
+  <figcaption>Site Icon</figcaption><br />
+  <img src="../logo.png" alt="logo" usemap="#center" height="200" width="200" />
+ </figure><br />
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="html0304.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>&lt;img&gt;</b> shows an image file</p>
+			<p><b>&lt;map&gt;</b> defines an image-map that splits an image into clickable sections</p>
+			<p><b>&lt;area&gt;</b> defines a part on an image-map that can be clicked (inside &lt;map&gt;)</p>
+			<p><b>&lt;figure&gt;</b> can contain &lt;img&gt; and a &lt;figcaption&gt;</p>
+			<p><b>&lt;figcaption&gt;</b> specifies a caption for &lt;figure&gt; (inside &lt;figure&gt;)</p>
+		</div>			
+	</div><br />		
+<!-------------------------------------------------------------------------------------------------->	
+	<div class="examples">
+		<div class="exTitle">
+			<p id="html0305">3.5) Multimedia</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="24" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Multimedia</title>
+</head>
+<body>
+ <video width="300" height="300" controls="controls">
+  <source src="movie.mp4 type="video/mp4" />
+  <source src="movie.ogg type="video/ogg" />
+  <source src="movie.webm type="video/webm" />
+  <object data="movie.mp4" width="300" height="300">
+   <embed src="../../media/companyMessage.swf" width="300" height="300">
+	 Your browser does not support video.
+   </embed>
+  </object>
+ </video>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="html0305.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>&lt;audio&gt;</b> plays a found file</p>
+			<p><b>&lt;video&gt;</b> plays a movie file</p>
+			<p><b>&lt;source&gt;</b> specifies alt. files (inside &lt;audio&gt; or &lt;video&gt;)</p>
+			<p><b>&lt;track&gt;</b> specifies visible text when playing (inside &lt;audio&gt; or &lt;video&gt;)</p>	
+			<p><b>&lt;object&gt;</b> produces embedded object</p>
+			<p><b>&lt;param&gt;</b> passes parameters to the plugin (inside &lt;object&gt;)</p>
+			<p><b>&lt;embed&gt;</b> defines ext. app or plug-in</p>
+			<p><b>&lt;canvas&gt;</b> reserves a region for a script to draw</p>
+		</div>			
+	</div><br />				
+<!-------------------------------------------------------------------------------------------------->
+	<p>Back to <a href="../htmlindex.html">HTML Table of Contents</a></p>
+</body>
+</html>

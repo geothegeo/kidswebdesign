@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+</html>
+<head>
+	<title>CSS Values</title>
+	<link rel="stylesheet" type="text/css" href="../../styles/dailyTasks.css">
+</head>
+<body>
+	<h3>1) Values</h3>
+<!-------------------------------------------------------------------------------------------------->		
+	<div class="examples">
+		<div class="exTitle">
+			<p id="css0101">1.1) Colours</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="30" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Colours</title>
+ <style type="text/css">
+  #div1 { background-color: #0F0; }
+  #div2 { background-color: #F0FF0F; }
+  #div3 { background-color: rgb(75,150,225); }
+  #div4 { background-color: rgba(012,123,234,.25); }
+  #div5 { background-color: rgb(33%,33%,33%); }
+  #div6 { background-color: rgba(75%,50%,25%,.75); }
+  #div7 { background-color: hsl(298, 35%, 60%); }
+  #div8 { background-color: hsla(201, 46%, 71%,.8); }
+  #div9 { background-color: goldenrod; }
+</style>
+</head>
+<body>
+ <div id="div1">&nbsp;</div><br/>
+ <div id="div2">&nbsp;</div><br/>
+ <div id="div3">&nbsp;</div><br/>
+ <div id="div4">&nbsp;</div><br/>
+ <div id="div5">&nbsp;</div><br/>
+ <div id="div6">&nbsp;</div><br/>
+ <div id="div7">&nbsp;</div><br/>
+ <div id="div8">&nbsp;</div><br/>
+ <div id="div9">&nbsp;</div><br/>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="css0101.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+				<p><b>(This page was embedded with internal CSS using &lt;style&gt;)</b></p>
+				<p><b>1)</b> #RGB hex</p>
+				<p><b>2)</b> #RRGGBB hex</p>
+				<p><b>3)</b> RGB(Red, Green, Blue) decimal</p>
+				<p><b>4)</b> RGBA(A = alpha channel) decimal</p>
+				<p><b>5)</b> RGB %</p>
+				<p><b>6)</b> RGBA %</p>
+				<p><b>7)</b> HSL(Hue, Saturation, Lightness) decimal</p>
+				<p><b>8)</b> HSLA decimal</p>
+				<p><b>9)</b> name</p>
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<div class="examples">
+		<div class="exTitle">
+			<p id="css0102">1.2) Lengths</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="49" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Lengths</title>
+</head>
+<body>
+ <hr align="left" style="width: 30%;"/><br/>
+ <hr align="left" style="width: 1in;"/><br/>
+ <hr align="left" style="width: 2cm;"/><br/>
+ <hr align="left" style="width: 25mm;"/><br/>
+ <p style="font-size: 1em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>	
+ <p style="font-size: 1ex;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+ <p style="font-size: 8pt;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+ <p style="font-size: 3pc;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+ <p style="font-size: 25px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+ <p style="font-size: 3vh;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+ <p style="font-size: 3vw;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+ <p style="font-size: 1vmin;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+ <p style="font-size: 1vmax;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="css0102.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>(This page was embedded with internal CSS using the style attribute)</b></p>
+			<p><b>Units</b></p>
+			<p><b>&ensp;Absolute Units</b></p>
+			<p><b>&ensp;&ensp;in</b> inch</p>
+			<p><b>&ensp;&ensp;cm</b> centimeter</p>
+			<p><b>&ensp;&ensp;mm</b> millimeter</p>
+			<p><b>&ensp;&ensp;pt</b> point (1/72 inch)</p>
+			<p><b>&ensp;&ensp;pc</b> pic (12 points)</p>
+			<p><b>&ensp;&ensp;px</b> pixels</p>
+			<p><b>&ensp;Relative Units</b></p>
+			<p><b>&ensp;&ensp;%</b> percent</p>
+			<p><b>&ensp;&ensp;em</b> font size</p>
+			<p><b>&ensp;&ensp;ex</b> about half the font size (lowercase height)</p>
+			<p><b>&ensp;&ensp;vh</b> viewport (browser) height</p>
+			<p><b>&ensp;&ensp;vw</b> viewport (browser) width</p>
+			<p><b>&ensp;&ensp;vmin</b> the smaller between vh and vw</p>
+			<p><b>&ensp;&ensp;vmax</b> the greater between vh and vw</p>
+		</div>			
+	</div><br />	
+<!-------------------------------------------------------------------------------------------------->
+	<p>Back to <a href="../cssIndex.html">HTML Table of Contents</a></p>
+</body>
+</html>

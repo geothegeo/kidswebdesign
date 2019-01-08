@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+h3 {
+	text-align: center;
+}
+
+.examples {
+    border: 1px black solid;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-left: 1.25%;
+	width: 97.5%;
+}
+
+.examples .exTitle{
+	padding: 2px;
+	position: absolute;
+	width: 100%;	
+}
+
+.examples .exDescript {
+	border: 1px turquoise solid;
+	margin-top: 20px;
+	position: relative;
+	width: 35%;
+}
+
+.examples p, .exDescript p, .exDisplay p, .exExplain p{
+	margin: 0;
+}
+
+.examples .exCode {
+	border: none;
+	background-color: white;
+	resize: none;	
+	width: 99%
+}
+
+.examples .exDisplay {
+	border: 1px red solid;
+	margin-top: 20px;
+	width: 35%;
+}
+
+.examples .exDisplay iframe {	
+	border: 0;
+	height: 91.5%;
+	margin:auto;
+	width: 98%;
+}
+
+.examples .exExplain {
+	border: 1px green solid;
+	margin-top: 20px;
+	width: 30%;
+}
+	
+.examples hr {
+	margin: 1px;
+}
+
+.examples .exLbl{
+	margin: 2px 2px 1px 2px;
+	font-size: 1em;
+}
+
+.examples .exExplain p {
+	padding-left: 2px;
+	font-size: .9em;
+	word-wrap: break-word;
+}
+
+.examples .exExplain .exLbl {
+	font-size: 1em;
+}
+
+br {
+	clear: both;
+}

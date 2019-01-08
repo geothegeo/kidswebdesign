@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>@keyframes</title>
+	<style>
+		@keyframes kf{
+			from {left:0px; background:yellow;}
+			25% {left:100px; background:green;}
+			50% {left:50px; background:white;}
+			75% {left:200px; background:blue;}
+			to {left:300px; background:blue;}
+		}
+		div {
+			width: 100px;
+			height: 100px;
+			position: relative;
+			background: yellow;
+			animation: kf 5s 3s alternate infinite
+		}
+	</style>
+</head>
+<body>
+	<div>A movign box that changes its color.</div>
+</body>
+</html>

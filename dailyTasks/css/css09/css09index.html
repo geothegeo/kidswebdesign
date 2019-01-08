@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+</html>
+<head>
+	<title>CSS Animation Properties</title>
+	<link rel="stylesheet" type="text/css" href="../../styles/dailyTasks.css">
+</head>
+<body>
+	<h3>9) Animation Properties</h3>
+<!-------------------------------------------------------------------------------------------------->		
+	<div class="examples">
+		<div class="exTitle">
+			<p id="css0901">Transition</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="28" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Transition</title>
+ <style>
+  div {
+   width: 150px;
+   height: 150px;
+   position: fixed;
+   background: yellow;
+   opacity: 1.0;
+   transition: width 5s linear
+   height 5s cubic-bezier(0,0.3,0.5,0.1),
+   opacity 5s;
+   transition-delay: 2s;
+  }
+  div:hover {
+   width: 300px;
+   height: 300px;
+   opacity: 0.0;
+  }
+ </style>
+</head>
+<body>
+ <div>Pointing at this box with the mouse gradually enlarges it and fades it out.</div>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="css0901.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>transition:</b> (all-in-one declaration)</p>
+			<p><b>transition-property:</b> </p>
+			<p><b>transition-duration:</b> </p>
+			<p><b>transition-timing-function:</b> </p>
+			<p><b>transition-delay:</b> </p>
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<div class="examples">
+		<div class="exTitle">
+			<p id="css0902">@keyframes</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="32" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>@keyframes</title>
+ <style>
+  @keyframes kf{
+   from {left:0px; background:yellow;}
+   25% {left:100px; background:green;}
+   50% {left:50px; background:white;}
+   75% {left:200px; background:blue;}
+   to {left:300px; background:blue;}
+  }
+  div {
+   width: 100px;
+   height: 100px;
+   position: relative;
+   background: yellow;
+   animation: kf 5s 3s alternate infinite
+  }
+ </style>
+</head>
+<body>
+ <div>A movign box that changes its color.</div>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="css0902.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>animation:</b> (all-in-one declaration)</p>
+			<p><b>animation-name:</b> </p>
+			<p><b>animation-duration:</b> </p> 
+			<p><b>animation-timting-function:</b> </p>
+			<p><b>animation-delay:</b> </p>
+			<p><b>animation-iteration-count:</b> </p>
+			<p><b>animation-direction:</b> </p>
+			<p><b>animation-play-state:</b> </p>
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<p>Back to <a href="../cssIndex.html">HTML Table of Contents</a></p>
+</body>
+</html>

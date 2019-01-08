@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+</html>
+<head>
+	<title>CSS Text Properties</title>
+	<link rel="stylesheet" type="text/css" href="../../styles/dailyTasks.css">
+</head>
+<body>
+	<h3>3) Text Properties</h3>
+<!-------------------------------------------------------------------------------------------------->		
+	<div class="examples">
+		<div class="exTitle">
+			<p id="css0401">Alignment</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="15" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Alignment</title>
+</head>
+<body>
+ <img src="../../media/logo.png" width="200" 
+  height="200" style="vertical-align:middle"/>
+ Text along the middle line.
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="css0401.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>direction:</b> </p>
+			<p><b>unicode-bidi:</b> together with the direction property, 
+				determines how bidirectional text in a document is handled.</p>
+			<p><b>text-align:</b> </p> 
+			<p><b>text-align-last:</b> aligns the last line</p>
+			<p><b>text-justify:</b> further modiifies text-align:justify</p>
+			<p><b>vertical-align:</b> </p>
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<div class="examples">
+		<div class="exTitle">
+			<p id="css0402">Spacing</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="34" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Spacing</title>
+</head>
+<body>
+ <p style="letter-spacing:5px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<p/>
+ <p style="line-height:1.5;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<p/>
+ <p style="text-indent:5%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<p/>
+ <p style="word-spacing:5px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<p/>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="css0402.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>letter-spacing:</b> </p>
+			<p><b>line-height:</b> </p>
+			<p><b>text-indent:</b> </p> 
+			<p><b>word-spacing:</b> </p>
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<div class="examples">
+		<div class="exTitle">
+			<p id="css0403">Wrapping</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="30" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Wrapping</title>
+ <style>
+  p {
+   width: 13em;
+   background: gold;
+  }
+  .overflow-wrap {
+   overflow-wrap: break-word;
+  }
+  .word-break {
+   word-break: break-all;
+  }	
+ </style>
+</head>
+<body>
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscingelit,seddoeiusmodtempor 
+  incididunt ut labore et dolore magna aliqua.(normal)</p>
+ <p class="overflow-wrap">Lorem ipsum dolor sit amet, consectetur adipiscingelit,seddoeiusmodtempor 
+  incididunt ut labore et dolore magna aliqua.(overflow-wrap)</p>
+ <p class="word-break">Lorem ipsum dolor sit amet, consectetur adipiscingelit,seddoeiusmodtempor 
+  incididunt ut labore et dolore magna aliqua.(word-break)</p> 
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="css0403.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>white-space:</b> </p>
+			<p><b>text-overflow:</b> </p>
+			<p><b>text-wrap:</b> line break of text/words/characters</p> 
+			<p><b>word-break:</b> line break for non Asian scripts</p>
+			<p><b>word-wrap:</b> line break of words/characters</p>
+			<p><b>hanging-punctuation:</b> control of the position of the punctuation</p>
+			<p><b>punctuation-trim:</b> the cutting away of the punctuation</p>
+			<p><b>page-break-before:</b> </p>
+			<p><b>page-break-after:</b> </p>
+			<p><b>page-break-inside;</b> </p>
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<div class="examples">
+		<div class="exTitle">
+			<p id="css0404">Outlook</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="20" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Outlook</title>
+ <style>
+  .noselect {
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   user-select: none;
+  }
+ </style>
+</head>
+<body>
+ <p>Selectable text.</p>
+ <p class="noselect">
+  Unselectable text.
+ </p>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="css0404.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>color:</b> </p>
+			<p><b>text-decoration:</b> </p>
+			<p><b>text-transform:</b> the manipulation of the characters</p> 
+			<p><b>text-outline:</b> </p>
+			<p><b>text-shadow:</b> </p>
+			<p><b>user-select:</b> whether the user can or cannot highlight text</p>
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<div class="examples">
+		<div class="exTitle">
+			<p id="css0405">Font</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="25" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Font</title>
+ <style>
+  div { background: orange; }
+  .i { font-style: italic; }
+  .b { font-weight: bold; }
+  .u { text-decoration: underline; }
+ </style>
+</head>
+<body style="width:350px; margin: 0px;">
+ <div class=" i b u">Hello World! Hello World!
+  Hello World! Hello World! Hello World! Hello World!
+  Hello World! Hello World! Hello World!</div>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="css0405.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>font:</b> </p>
+			<p><b>font-family:</b> </p>
+			<p><b>font-size:</b> </p>
+			<p><b>font-size-adjust:</b> none or adjust the size difference between 'x' and 'X'</p>
+			<p><b>font-style:</b> normal, italic, or oblique</p>
+			<p><b>font-variant:</b> either normal or uses a small, capitalized font</p>
+			<p><b>font-weight:</b> </p>
+			<p><b>font-stretch:</b> controls the spacing between text</p>
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<div class="examples">
+		<div class="exTitle">
+			<p id="css0406">@font-face</p>
+		</div>
+		<div class="exDescript">
+			<p class="exLbl">Code:</p><hr color="turquoise"/>
+			<textarea class = "exCode" disabled="true" rows="32" cols="80">
+<!DOCTYPE html>
+<html>
+<head>
+ <title></title>
+ <style>
+  @font-face {
+   font-family: newfont;
+   src: url('../../media/SansationLight.eot'), 
+   url('../../media/SansationLight.ttf') format('woff'),
+   url('../../media/SansationLight.ttf') format('truetype');
+   font-style: italic;
+  }
+  p { font-family: newfont; }
+ </style>
+</head>
+<body>
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<p/>
+</body>
+</html>
+			</textarea>
+		</div>				
+		<div class="exDisplay">
+			<p class="exLbl">Output:</p><hr color="red"/>
+			<iframe src="css0406.html"></iframe>			
+		</div>
+		<div class="exExplain">
+			<p class="exLbl">Notes:</p><hr color="green"/>
+			<p><b>font-family:</b> </p>
+			<p><b>src:</b> </p>
+			<p><b>font-stretch:</b> </p> 
+			<p><b>font-style:</b> </p>
+			<p><b>font-weight:</b> </p>
+			<p><b>unicode-range:</b> </p>
+		</div>			
+	</div><br />
+<!-------------------------------------------------------------------------------------------------->
+	<p>Back to <a href="../cssIndex.html">HTML Table of Contents</a></p>
+</body>
+</html>

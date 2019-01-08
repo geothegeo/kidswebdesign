@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Generated Content Properties</title>
+	<style>
+		.box {
+			display: -moz-box;
+			display: box;
+			width: 200px;
+			height: 200px;
+			border: 1px solid black;
+			-moz-box-align: center;
+			-moz-box-pack: center;
+			-moz-box-direction: reverse;
+			-moz-box-orient: vertical;
+		}
+		.o1 {
+			margin: 5px;
+			-moz-box-ordinal-group: 1;
+			box-ordinal-group: 1;
+		}
+		.o2 {
+			margin: 5px;
+			-moz-box-ordinal-group: 2;
+			box-ordinal-group: 2;			
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="o2">1</div>
+		<div class="o1">22</div>
+		<div class="o1">333</div>
+		<div class="o1">4444</div>
+		<div class="o1">55555</div>
+	</div>
+</body>
+</html>
